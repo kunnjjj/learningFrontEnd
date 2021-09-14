@@ -1,0 +1,113 @@
+.small_ones
+{
+    height: 200px;
+    width: 150px;
+    margin: 30px;
+    /* animation: 1s linear;
+    animation-name: BACK;  */
+    /* transform: scale(0.5);
+    transition-duration: 5s;
+    transition-delay: 4s; */
+    transform: rotateY(0deg);
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+}
+@keyframes BACK 
+{
+    0%
+    {
+        /* transform: scale(1.2); */
+        transform: rotateY(-180deg);
+    }
+    50%
+    {
+        /* transform: scale(1.5); */
+    }
+    100%
+    {
+        transform: rotateY(0deg);
+        /* background-color: green ; */
+    }    
+}
+.small_ones:hover
+{
+    /* animation: 1s linear ;
+    animation-name: ROTATE; */
+    cursor: pointer;
+
+    /* animation-fill-mode: forwards; */
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+} 
+@keyframes ROTATE
+{
+    0%
+    {
+        /* transform: rotateZ(45deg); */
+    }
+    100%
+    {
+        transform: rotateY(180deg);
+        /* background-color: blue; */
+    }
+}
+section
+{
+    /* background-color: gray; */
+    display: flex;
+    border: 2px black solid;
+    width: 70vw;
+    /* height: 200px; */
+    margin: 30px auto;
+    position: relative;
+    justify-content: space-evenly;
+    /* border-radius: 2px; */
+}
+#all
+{
+    background-color: lightsalmon;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small_ones div
+{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;  
+    /* border-radius: 50px; */
+    /* backface-visibility: hidden; */
+}
+
+
+.small_ones div:nth-of-type(1)
+{
+    z-index: 4;
+    background-color: lightgreen;
+}
+
+
+.small_ones div:nth-of-type(2)
+{
+    z-index: 3;
+    background-color:lightcoral;
+    transform: rotateY(180deg);
+}
+#sibling
+{
+    height: 50px;
+    width: 100px;
+    border: black 2px solid;
+    transform: scale(0.5);
+    transition-duration: 5s;
+    /* transition-delay: 4s; */
+
+}
+#sibling:hover
+{
+    background-color: green;
+    transform: scale(1.5) rotateY(360deg);
+    transition-duration: 5s;
+}
