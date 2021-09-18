@@ -37,7 +37,8 @@
 
     /* animation-fill-mode: forwards; */
     transform: rotateY(180deg);
-    transition-duration: 2s;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
     transform-style: preserve-3d;
 } 
 @keyframes ROTATE
@@ -103,7 +104,7 @@ section
     transform: scale(0.5);
     transition-duration: 5s;
     /* transition-delay: 4s; */
-
+    
 }
 #sibling:hover
 {
