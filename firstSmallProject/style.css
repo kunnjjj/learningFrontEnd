@@ -527,6 +527,7 @@ hr
     transition-duration: 0.5s;
     cursor: pointer;
 }
+
 #after-big-img > section:hover a
 {
     color: white;
