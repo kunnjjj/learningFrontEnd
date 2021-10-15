@@ -46,7 +46,7 @@ function compressFile(path,compressed)
         compressed(comp);
     },2000);
 }
-
+O(10^4)
 downloadPath(url, (path) => {
     compressFile(path,function (comp)
     {
@@ -54,3 +54,12 @@ downloadPath(url, (path) => {
 
     });
 });
+// [1,2,4,8,16,32,...]
+// larget number <=10^9 2^k
+// "1504"->
+// "16"
+// "1"->3 + 1 
+
+// [5]=0000000000101
+// [7]=0000000000111
+//    =0000000000010

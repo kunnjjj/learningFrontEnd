@@ -1,0 +1,59 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+h1
+{
+    margin: 30px auto;
+    text-align: center;
+}
+#todo
+{
+    margin:30px auto;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#todo div:nth-of-type(2)
+{
+    margin: 30px 100px;
+    /* background-color: aqua; */
+}
+#todo div:nth-of-type(1)
+{
+    /* margin: 20px auto; */
+    /* background-color: aqua; */
+    text-align: center;
+}
+section button
+{
+    margin-left: 0;
+}
+input
+{
+    font-size: 1rem;
+}
+ul li 
+{
+    position: relative;
+    list-style: none;
+    margin-bottom: 3px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 3px auto;
+}
+
+ul li:nth-of-type(2n+1)
+{
+    background-color: lightgreen;
+}
+ul li:nth-of-type(2n+2)
+{
+    background-color: lightcyan;
+}
+button
+{
+    width: 28px;
+}
